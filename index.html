@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>First Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="original">
+         <h1>Original Image</h1>
+         <img src="images/image.jpg">
+      </div>
+      <div class="scrambled">
+         <h1>Scrambled</h1>
+         <!--Split image into 9 sections, 3x3, with each row being its own div
+         with 3 divs within in-->
+         <!--TOP-->
+         <div class="section">
+            <div id="img1" class="chopped"></div>
+            <div id="img2" class="chopped"></div>
+            <div id="img3" class="chopped"></div>
+         </div>
+         <!--MIDDLE-->
+         <div class="section">
+            <div id="img4" class="chopped"></div>
+            <div id="img5" class="chopped"></div>
+            <div id="img6" class="chopped"></div>
+         </div>
+         <!--BOTTOM-->
+         <div class="section">
+            <div id="img7" class="chopped"></div>
+            <div id="img8" class="chopped"></div>
+            <div id="img9" class="chopped"></div>
+         </div>
+      </div>
+    </div>
+    <!--Needs to be at end, since putting this in the head will cause
+    it to run before the rest is loaded, resulting in missing content-->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

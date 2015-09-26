@@ -1,0 +1,81 @@
+/*
+These are the default styles. No need to change these.
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.chopped {
+  background-image: url('../images/image.jpg');
+  background-repeat: no-repeat;
+  /* each image segment is 1/3 of the div */
+  width: 133.33px;
+  height: 133.33px;
+  /* To display 3 divs within their containing div */
+  display: inline-block;
+}
+
+/*
+Repositioning images using XY pixelated values
+*/
+/*
+#one {
+  background-position: -133.33px -133.33px;
+}
+#two {
+  background-position: -133.33px -266.66px;
+}
+#three {
+  background-position: 0px 0px;
+}
+#four {
+  background-position: -266.66px -266.66px;
+}
+#five {
+  background-position: -266.66px -133.33px;
+}
+#six {
+  background-position: -133.33px 0px;
+}
+#seven {
+  background-position: -266.66px 0px; 
+}
+#eight {
+  background-position: 0px -266.66px;
+}
+#nine {
+  background-position: 0px -133.33px;
+}
+*/
+
+/*
+These are the responsive styles. Throw some breakpoints in here!
+*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100%;
+}
+
+@media screen and (min-width: 450px) {
+  .original, .scrambled {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
