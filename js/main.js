@@ -62,13 +62,16 @@ for (var i = 0; i < squares; i++) {
 	document.getElementById("img"+(i+1)).style.backgroundPosition = xCoord + "px " + yCoord + "px"; 
 }
 */
-
+/*
 var newSection = document.createElement("div");
 newSection.className = "scrambled";
 document.getElementsByClassName('container')[0].appendChild(newSection);
+*/
 /*createTextNode('<h1>Scrambled</h1>'); */
+
 /* for each row, create a new div to contain n columns */
 for (var m = 0; m < dims; m++){
+	var newSection = document.getElementsByClassName('scrambled')[0];
 	var newRow = document.createElement("div");
 	/*
 	document.getElementsByTagName('body')[0].appendChild(newSection);	
