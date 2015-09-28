@@ -2,12 +2,12 @@
 Randomanization calculation
 */
 var xyDims = 400;
-var squares = 9;
+var squares = 16;
 var dims = Math.sqrt(squares);
-var increment = xyDims/dims; 
+var squareSize = xyDims/dims; 
 /*
 console.log(dims);
-console.log(increment);
+console.log(squareSize);
 */
 /* Create coordinates array*/
 var coordinates = [];
@@ -15,8 +15,8 @@ var coordinatesCopy = [];
 for (var j = 0; j < dims; j++) {
 	/* var cols = []; */
 	for (var k = 0; k < dims; k++) {
-		coordinates.push({x: -(j*(increment)), y: -(k*(increment))});
-		coordinatesCopy.push({x: -(j*(increment)), y: -(k*(increment))});
+		coordinates.push({x: -(j*(squareSize)), y: -(k*(squareSize))});
+		coordinatesCopy.push({x: -(j*(squareSize)), y: -(k*(squareSize))});
 	}
 	/* coordinates[j] = cols; */
 }
@@ -87,6 +87,8 @@ for (var m = 0; m < dims; m++){
 			var xCoord = randomCoords[0].x;
 			var yCoord = randomCoords[0].y;
 		newCol.setAttribute("class", "chopped");
+		newCol.style.width = squareSize + 'px';
+		newCol.style.height = squareSize + 'px';
 		//newCol.setId("id", "img");
 		newRow.appendChild(newCol);
 		//document.getElementById("img").style.backgroundPosition = xCoord + "px " + yCoord + "px";
