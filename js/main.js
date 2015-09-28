@@ -2,7 +2,7 @@
 Randomanization calculation
 */
 var xyDims = 400;
-var squares = 16;
+var squares = 9;
 var dims = Math.sqrt(squares);
 var squareSize = xyDims/dims; 
 /*
