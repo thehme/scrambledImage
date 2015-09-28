@@ -21,7 +21,6 @@ body {
   */
   /* To display 3 divs within their containing div */
   display: inline-block;
-  line-height: 0;
 }
 
 /*
